@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJ Home Page</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body onload="typeWriter(), typeWriter1()" >
+    <script>
+      var i = 0;
+      var a = 0;
+  var txt = 'Ajay Pargaonkar';
+  var txt1 = '| MCA | Student';
+  var speed = 100;
+  var speed1 = 130;
+  
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("demo").innerHTML += txt.charAt(i);
+      
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+
+  function typeWriter1()
+  {
+    if(a < txt1.length)
+    {
+      document.getElementById("demo1").innerHTML += txt1.charAt(a);
+      a++;
+      setTimeout(typeWriter1,speed1);
+    }
+  }
+  </script>
+    <!-- navbar -->
+    <nav class="nav" id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+         
+          <button class="nav-btn" id="nav-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- nav-links -->
+        <ul class="nav-links">
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="about.html">about</a>
+          </li>
+          <li>
+            <a href="projects.html">projects</a>
+          </li>
+          <li>
+            <a href="contact.html">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div>
+        <button class="close-btn" id="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <!-- nav-links -->
+        <ul class="sidebar-links">
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="about.html">about</a>
+          </li>
+          <li>
+            <a href="projects.html">projects</a>
+          </li>
+          <li>
+            <a href="contact.html">contact</a>
+          </li>
+        </ul>
+        <!-- social icons -->
+        <ul class="social-icons">
+                   <!-- single item -->
+                   <li>
+                    <a href="https://www.facebook.com/profile.php?id=100004888184984" class="social-icon">
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                  </li>
+                  <!-- end of single item -->
+                  <!-- single item -->
+                  <li>
+                    <a href="https://www.linkedin.com/in/ajay-pargaonkar-040647201/" class="social-icon">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/ajay-pargaonkar-040647201/" class="social-icon">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <!-- end of single item -->
+        </ul>
+      </div>
+    </aside>
+    <!-- end of sidebar -->
+    <!-- header -->
+    <header class="hero">
+      <div class="section-center hero-center">
+        <article class="hero-info">
+          <div class="underline"></div>
+          <h1>i'm <span id="demo"></span></h1>
+          <h4><span id="demo1"></span></h4>
+          <h4>Software Development, Web development</h4>
+          <a href="contact.html" class="btn hero-btn">hire me</a>
+          
+          <!-- social icons -->
+          <ul class="social-icons hero-icons">
+            <!-- single item -->
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=100004888184984" class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <!-- end of single item -->
+        <!-- single item -->
+        <li>
+          <a href="https://www.linkedin.com/in/ajay-pargaonkar-040647201/" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <!-- end of single item -->
+       
+        <li>
+          <a href="https://www.instagram.com/ajaypargaonkar_vaidya/" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <!-- end of single item -->
+          </ul>
+        </article>
+      </div>
+    </header>
+    <!-- end of header -->
+    <!-- about -->
+    <section class="section about">
+      <div class="section-center about-center">
+        <!-- about info -->
+        <article class="about-info">
+          <!-- section title -->
+          <div class="section-title about-title">
+            <h2>about</h2>
+            <div class="underline"></div>
+          </div>
+          <!--end of section title -->
+          <p>
+             <i>"Nothing is Hard and Impossible to achieve its our way to how we will go through with efforts ,hardwork and prservance to get our GOAL."</i>
+          </p>
+          <p>
+           Always to be Honest with my Work
+          </p>
+          <p>
+            Postive Minded ready to work hard with adopting any Change
+          </p>
+          <a href="about.html" class="btn">about me</a>
+        </article>
+      </div>
+    </section>
+    <!-- end of about -->
+    <!-- services -->
+    <section class="section bg-grey">
+      <!-- section title -->
+      <div class="section-title">
+        <h2>Skills</h2>
+        <div class="underline"></div>
+      </div>
+      <!--end of section title -->
+      <div class="services-center section-center">
+        <!-- single service -->
+        <article class="service">
+          <i class="fas fa-code service-icon"></i>
+          
+          <div class="underline"></div>
+          <ul>
+            <li>HTML</li><br>
+            <li>CSS </li><br>
+            <li>Javascript</li><br>
+            <li>BootStrap</li><br>            
+            <li>Java</li><br>
+            <li>Basic Python</li><br>
+            <li>Linux</li><br>
+          </ul>
+        </article>
+        <!-- end of single service -->        
+      </div>
+    </section>
+    <!-- end of services -->
+   
+    <!-- projects -->
+    <section class="section projects">
+      <!-- section title -->
+      <div class="section-title">
+        <h2>Project</h2>
+        <div class="underline"></div>
+        <p class="projects-text">
+          Food business website.
+        </p>
+        <button class="btn"><a href="projects.html"> PROJECT</a></button>
+      </div>
+<!--add project here-->
+
+         </section>
+    <!-- end of projects -->
+    <!-- connect -->
+    <section class="connect">
+      <video
+        controls
+        autoplay
+        muted
+        loop
+        class="video-container"
+        poster="./images/project-3.jpeg"
+      >
+        <source src="" type="video/mp4" />
+        Sorry, your browser does not support embedded videos
+      </video>
+      <div class="video-banner">
+        <!-- section title -->
+        <div class="section-title">
+          <h2>Contact</h2>
+          <div class="underline"></div>
+        </div>
+        <!--end of section title -->
+        <p class="video-text">
+         <li>Email: Ajaypargaonkar73@gmail.com</li>
+         <li>Mobile No: +918459889989,</li>
+         <li>INDIA,MH,BEED,PARLI V</li>
+        </p>
+        <a href="contact.html" class="btn">contact me</a>
+      </div>
+    </section>
+    <!-- end of connect -->
+    <!-- skills -->
+    <section class="section skills">
+      <!-- section title -->
+      <div class="section-title">
+        <h2>skills</h2>
+        <div class="underline"></div>
+      </div>
+      <!--end of section title -->
+      <div class="section-center skills-center">
+        <article>
+          
+          <!-- single skill -->
+          <div class="skill">
+            <p>HTML/CSS</p>
+            <div class="skill-container">
+              <div class="skill-value"></div>
+              <p class="skill-text">
+                50%
+              </p>
+            </div>
+          </div>
+          <!--end of  single skill -->
+          <!-- single skill -->
+          <div class="skill">
+            <p>Javascript</p>
+            <div class="skill-container">
+              <div class="skill-value value-70"></div>
+              <p class="skill-text skill-text-70">
+                40%
+              </p>
+            </div>
+          </div>
+          <!--end of  single skill -->
+        </article>
+        <article>
+          
+          <!-- single skill -->
+          <div class="skill">
+            <p>JAVA</p>
+            <div class="skill-container">
+              <div class="skill-value"></div>
+              <p class="skill-text">
+                60%
+              </p>
+            </div>
+          </div>
+          <!--end of  single skill -->
+          <!-- single skill -->
+          <div class="skill">
+            <p>C++</p>
+            <div class="skill-container">
+              <div class="skill-value value-70"></div>
+              <p class="skill-text skill-text-70">
+                50%
+              </p>
+            </div>
+          </div>
+          <!--end of  single skill -->
+        
+        </article>
+      </div>
+    </section>
+    <!-- end of skills -->
+    <!-- timeline -->
+    <section class="section timeline">
+      <!-- section title -->
+      <div class="section-title">
+        <h2>Education Details</h2>
+        <div class="underline"></div>
+      </div>
+      <!--end of section title -->
+      <div class="section-center timeline-center">
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>2022</h4>
+          <p>
+            <p>
+              Course:Master of Computer Application 
+             </p>
+              <p>
+              Period: 2020 to 2022
+              Pursing
+             </p>
+           <p> 
+             College Name : Jayawant Shikshan Prasarak Mandal Rajarshi Shahu College of engineering tathwade,Pune.
+           </p>
+           <p> 
+              MCA SEM I - 90%
+              MCA SEM II- 80% 
+             </p>
+          </p>
+          
+        </article>
+        <!-- end of  single timeline item -->
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>2020</h4>
+          <p>
+           Course:BSC Science 
+          </p>
+           <p>
+           Period: 2017 to 2020
+          </p>
+        <p> 
+          College Name : Vaidyanath College
+        </p>
+        <p> 
+           Percentage:68.53% 
+          </p>
+
+        </article>
+        <!-- end of  single timeline item -->
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>2017</h4>
+          <p>
+            Course:HSC General Science 
+           </p>
+            <p>
+            Period: 2015 to 2017
+           </p>
+         <p> 
+           College Name : Vaidyanath College
+         </p>
+         <p> 
+            Percentage:69.69% 
+           </p>
+
+        </article>
+        <!-- end of  single timeline item -->
+
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>2015</h4>
+          <p>
+            Course:SSC 
+           </p>
+            <p>
+            Period: 2014 to 2015
+           </p>
+         <p> 
+           College Name : Vaidyanath College
+         </p>
+         <p> 
+            Percentage:80.20% 
+           </p>
+
+        </article>
+        <!-- end of  single timeline item -->
+      </div>
+    </section>
+    <!--end of  timeline -->
+    
+    <!-- blog -->
+    <section class="section blog">
+      <!-- section title -->
+      <div class="section-title">
+        <h2>My Inspirations</h2>
+        <div class="underline"></div>
+      </div>
+      <!--end of section title -->
+      <div class="section-center blog-center">
+        <!-- single article -->
+        <div class="card">
+          <!-- front of the card -->
+          <div class="card-side card-front">
+            <img src="./images/motivational 1.jpg" alt="" />
+            <div class="card-info">
+              <h4>SUNDAR PICHAI</h4>
+              <p>
+                “A person who is happy is not because everything is right in his life, He is happy because of his attitude towards everything in his life is right.”― 
+              </p>
+              <p>
+                “Wear your failure as a badge of honor!”-
+              </p>
+            </div>
+          </div>
+          <!-- card back  -->
+          <div class="card-side card-back">
+            <button class="btn"><a href="https://www.yourselfquotes.com/sundar-pichai-quotes/">read more</a></button>
+          </div>
+        </div>
+        <!-- end of single article -->
+        <!-- single article -->
+        <div class="card">
+          <!-- front of the card -->
+          <div class="card-side card-front">
+            <img src="./images/elon musk 1.jpg" alt="" />
+            <div class="card-info">
+              <h4>ELON MUSK</h4>
+              <p>
+                "There have to be reasons that you get up in the morning and you want to live. Why do you want to live? What’s the point? What inspires you? What do you love about the future? If the future does not include being out there among the stars and being a multi-planet species, I find that incredibly depressing."― 
+              </p>
+            </div>
+          </div>
+          <!-- card back  -->
+          <div class="card-side card-back">
+            <button class="btn"><a href="https://en.wikipedia.org/wiki/Elon_Musk">read more </a></button>
+          </div>
+        </div>
+        <!-- end of single article -->
+        <!-- single article -->
+        <div class="card">
+          <!-- front of the card -->
+          <div class="card-side card-front">
+            <img src="./images/bill gates 1.jpg" alt="" />
+            <div class="card-info">
+              <h4>BILL GATES</h4>
+              <p>
+                “It’s fine to celebrate success, but it is more important to heed the lessons of failure.” 
+                <br> “Success is a lousy teacher. It seduces smart people into thinking they can’t lose.” – Bill Gates
+              </p>
+            </div>
+          </div>
+          <!-- card back  -->
+          <div class="card-side card-back">
+            <button class="btn"><a href="https://everydaypower.com/bill-gates-quotes/">read more</a></button>
+          </div>
+        </div>
+        <!-- end of single article -->
+      </div>
+    </section>
+    <!--end of inspiration -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <!-- social icons -->
+      <ul class="social-icons">
+      <!-- single item -->
+      <li>
+        <a href="https://www.facebook.com/profile.php?id=100004888184984" class="social-icon">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+      <!-- end of single item -->
+      <!-- single item -->
+      <li>
+        <a href="https://www.linkedin.com/in/ajay-pargaonkar-040647201/" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      <!-- end of single item -->
+     
+      <li>
+        <a href="https://www.instagram.com/ajaypargaonkar_vaidya/" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      <!-- end of single item -->
+      </ul>
+
+      <p>&copy; <span id="date"></span> Ajay Pargaonkar. all rights reserved</p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
